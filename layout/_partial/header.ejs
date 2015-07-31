@@ -5,7 +5,9 @@ function root_for(path){
 	if (path.substring(0, root.length) !== root){
     if (path.substring(0, 1) === '/'){
       path = root.substring(0, root.length - 1) + path;
-    } else {
+    } else if (path.substring(0,4)==='http'){
+    	path = path;
+	}else {
       path = root + path;
     }
   }
@@ -36,6 +38,11 @@ function root_for(path){
 						<label>Search</label>
 						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="<%= __('search') %>" />
 					</form>
+                     <% }else if	(theme.swift_search.enable){ %>
+						<form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="st-default-search-input" maxlength="20" placeholder="Search" />
+						</form>
 					<% } else if(theme.baidu_search.enable){ %>
 						<form class="search" action="<%- theme.baidu_search.site %>" target="_blank">
 							<label>Search</label>
@@ -47,11 +54,10 @@ function root_for(path){
 						<input type="text" id="ts-search-input" name="q" size="30" placeholder="<%= __('search') %>"><br>
 						</form>
 					<% } else { %>
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+					<form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="<%= __('search') %>" />
-						<input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
-					</form>
+						<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search" />
+						</form>
 					<% } %>
 					</li>
 				</ul>

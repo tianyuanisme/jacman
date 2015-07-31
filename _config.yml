@@ -1,8 +1,9 @@
 ##### Menu
-menu:
-  Home: /
-  Archives: /archives
-  About: /about
+menu: 
+  地图: http://www.isupermap.com/web/maps
+  开发: http://www.isupermap.com/developer/index.html 
+  博客: / 
+  归档: /archives 
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -26,14 +27,14 @@ rss: /atom.xml ## RSS address.
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
-  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
+  src: img/logo.png       ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
+favicon: img/iSuperMapLogo.ico  ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
 apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
-author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
-banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
+author_img: img/author.png ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
+banner_img: #img/banner.png ## size:1920px*200px+. Banner Picture
 ### Theme Color 
 theme_color:
-    theme: '#2ca6cb'    ##the defaut theme color is blue
+    theme: '#0083CB'    ##the defaut theme color is blue iSuperMap蓝0083CB 2ca6cb
 
 # 代码高亮主题
 # available: default | night
@@ -53,8 +54,8 @@ creative_commons: none
 
 #### Author information
 author:
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
+  intro_line1:  "用GIS为地球建模"    ## your introduction on the bottom of the page
+  intro_line2:  "用Geo-platform创造价值"  ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
@@ -78,8 +79,7 @@ toc:
 
 #### Links
 links:
-  码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
-  Jark's Blog: http://wuchong.me
+  iSuperMap: http://www.isupermap.com/
 
 
 
@@ -101,8 +101,8 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: false
-  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  enable: true
+  sitecode: 99eeb592404ea97484c0e5c486d957a1  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id
@@ -125,9 +125,12 @@ google_cse:
 ## ---
 baidu_search:     ## http://zn.baidu.com/
   enable: false
-  id:   ## e.g. "783281470518440642"  for your baidu search id
-  site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
+  id:   #5173149711838990494 ## e.g. "783281470518440642"  for your baidu search id
+  site: #http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
   
 tinysou_search:     ## http://tinysou.com/
   enable: false
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
+  
+swift_search:    ##https://swiftype.com by tianyuanisme
+  enable: true
