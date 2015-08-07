@@ -17,7 +17,7 @@ function root_for(path){
 <div>
 		<% if	(theme.imglogo.enable&&theme.imglogo.src){ %>
 			<div id="imglogo">
-				<a href="<%- config.root %>"><img src="<%- config.root %><%= theme.imglogo.src %>" alt="<%= config.title %>" title="<%= config.title %>"/></a>
+				<a href="http://www.isupermap.com"><img src="<%- config.root %><%= theme.imglogo.src %>" alt="<%= config.title %>" title="<%= config.title %>"/></a>
 			</div>
 			<% } %>
 			<div id="textlogo">
@@ -36,7 +36,7 @@ function root_for(path){
  					<% if	(theme.google_cse.enable){ %>
 					<form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="<%= __('search') %>" />
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="<%= __('search') %>"/>
 					</form>
                      <% }else if	(theme.swift_search.enable){ %>
 						<form class="search" action="" method="get" accept-charset="utf-8" onsubmit="doSubmit()">
@@ -52,7 +52,7 @@ function root_for(path){
 							form.action = baseUrl + "#stq=" + query + "&stp=1";
 							form.submit();
 						}
-						</script>
+						</script>			
 					<% } else if(theme.baidu_search.enable){ %>
 						<form class="search" action="<%- theme.baidu_search.site %>" target="_blank">
 							<label>Search</label>
@@ -68,7 +68,7 @@ function root_for(path){
 						<label>Search</label>
 						<input type="text" id="st-default-search-input" maxlength="20" placeholder="Search" />
 						</form>
-						<script>
+					<script>
 						function doSubmit(){
 							var form = event.target;
 							var query = document.getElementById("st-default-search-input").value;
@@ -77,7 +77,7 @@ function root_for(path){
 							form.action = baseUrl + "#stq=" + query + "&stp=1";
 							form.submit();
 						}
-						</script>
+					</script>						
 					<% } %>
 					</li>
 				</ul>
