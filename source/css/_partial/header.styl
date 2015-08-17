@@ -39,6 +39,7 @@ body
 #textlogo
   float left
   width 75%
+  height 50px
   margin-left 1em
   h1.site-name
     width 86%
@@ -106,14 +107,15 @@ header nav
   ul li
     @media tablet
       float left
-  ul li a
+  ul li a  
     padding 0.2em 0 0.2em 1em
     @media tablet
-      padding 0.2em 1.5em
+      margin-right 15px
+      padding 4px 9px  
+	  
     &:hover
-      background saturate(darken(color-theme, 25%), 10%)
-      color color-font-nav
-
+      background color-background-nav
+ 
 .shownav
   max-height 40em
 

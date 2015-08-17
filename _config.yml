@@ -3,7 +3,7 @@ menu:
   地图: http://www.isupermap.com/web/maps
   开发: http://www.isupermap.com/developer/index.html 
   博客: / 
-  归档: /archives 
+  我的内容: http://www.isupermap.com/web/mycontent/maps
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
